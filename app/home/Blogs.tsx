@@ -1,42 +1,19 @@
-import Link from '@/components/Link'
-import Tag from '@/components/Tag'
-import siteMetadata from '@/data/siteMetadata'
+import React from 'react'
+import Link from 'next/link'
+import { sortPosts, allCoreContent } from 'pliny/utils/contentlayer'
+import { allBlogs } from 'contentlayer/generated'
 import { formatDate } from 'pliny/utils/formatDate'
-import NewsletterForm from 'pliny/ui/NewsletterForm'
-import Image from '@/components/Image'
+import siteMetadata from '@/data/siteMetadata'
+import Tag from '@/components/Tag'
 
 const MAX_DISPLAY = 5
 
-export default function Home({ posts }) {
+export default function Blogs() {
+  const sortedPosts = sortPosts(allBlogs)
+  const posts = allCoreContent(sortedPosts)
+
   return (
     <>
-      <div className="relative h-screen">
-        <Image
-          className="absolute bottom-20 left-1/2 z-10 -translate-x-1/2"
-          src="/static/images/avatar.png"
-          alt="sohaibsalman"
-          width={800}
-          height={800}
-        />
-        <div className="absolute z-0 w-full text-center">
-          <span
-            className="inline-block text-7xl font-extrabold uppercase md:mx-8 md:text-8xl lg:text-9xl"
-            style={{
-              color: 'transparent',
-              WebkitTextStrokeColor: 'white',
-              WebkitTextStrokeWidth: '1px',
-            }}
-          >
-            Sohaib
-          </span>
-          <span className="inline-block text-7xl font-extrabold uppercase text-primary-50 md:text-8xl lg:text-9xl">
-            Salman
-          </span>
-        </div>
-        <div className="absolute left-[5vw] top-1/2 z-20 -translate-y-1/2 rounded-full bg-black/75 px-8 py-5 text-4xl font-bold lg:text-5xl">
-          Software Engineer
-        </div>
-      </div>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pb-8 pt-6 md:space-y-5">
           <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
@@ -107,11 +84,6 @@ export default function Home({ posts }) {
           >
             All Posts &rarr;
           </Link>
-        </div>
-      )}
-      {siteMetadata.newsletter?.provider && (
-        <div className="flex items-center justify-center pt-4">
-          <NewsletterForm />
         </div>
       )}
     </>
