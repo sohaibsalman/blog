@@ -3,12 +3,10 @@ import headerNavLinks from '@/data/headerNavLinks'
 import Logo from '@/data/logo.svg'
 import Link from './Link'
 import MobileNav from './MobileNav'
-import ThemeSwitch from './ThemeSwitch'
-import SearchButton from './SearchButton'
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between py-10">
+    <header className="fixed z-50 flex w-full items-center justify-between px-8 py-5 backdrop-blur-lg">
       <div>
         <Link href="/" aria-label={siteMetadata.headerTitle}>
           <div className="flex items-center justify-between">
@@ -26,18 +24,15 @@ const Header = () => {
         </Link>
       </div>
       <div className="flex items-center space-x-4 leading-5 sm:space-x-6">
-        {headerNavLinks
-          .map((link) => (
-            <Link
-              key={link.title}
-              href={link.href}
-              className="hidden font-medium text-gray-900 dark:text-gray-100 sm:block"
-            >
-              {link.title}
-            </Link>
-          ))}
-        <SearchButton />
-        <ThemeSwitch />
+        {headerNavLinks.map((link) => (
+          <Link
+            key={link.title}
+            href={link.href}
+            className="hidden font-medium text-gray-900 dark:text-gray-100 sm:block"
+          >
+            {link.title}
+          </Link>
+        ))}
         <MobileNav />
       </div>
     </header>

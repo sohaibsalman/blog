@@ -1,6 +1,23 @@
 // @ts-check
 const { fontFamily } = require('tailwindcss/defaultTheme')
-const colors = require('tailwindcss/colors')
+const tailwindColors = require('tailwindcss/colors')
+
+const primaryColor = {
+  'primary': {
+    '50': '#c9f31d',
+    '100': '#c9f31d',
+    '200': '#c9f31d',
+    '300': '#c9f31d',
+    '400': '#c9f31d',
+    '500': '#c9f31d',
+    '600': '#c9f31d',
+    '700': '#c9f31d',
+    '800': '#c9f31d',
+    '900': '#c9f31d',
+    '950': '#c9f31d',
+  }
+}
+const colors = {...tailwindColors, ...primaryColor};
 
 /** @type {import("tailwindcss/types").Config } */
 module.exports = {
@@ -25,7 +42,7 @@ module.exports = {
         sans: ['var(--font-space-grotesk)', ...fontFamily.sans],
       },
       colors: {
-        primary: colors.pink,
+        primary: colors.primary,
         gray: colors.gray,
       },
       typography: ({ theme }) => ({
@@ -69,3 +86,5 @@ module.exports = {
   },
   plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
 }
+
+export default colors;
