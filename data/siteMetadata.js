@@ -1,4 +1,4 @@
-/** @type {import("pliny/config").PlinyConfig } */
+/** @type {import("types").CustomConfig } */
 const siteMetadata = {
   title: 'Sohaib Salman',
   author: 'Sohaib Salman',
@@ -86,6 +86,56 @@ const siteMetadata = {
     //   indexName: 'docsearch',
     // },
   },
+  skills: [
+    {
+      image: '/static/images/skills/dotnet.png',
+      title: 'ASP.NET',
+    },
+    {
+      image: '/static/images/skills/react.png',
+      title: 'React',
+    },
+    {
+      image: '/static/images/skills/nextjs.png',
+      title: 'Next JS',
+    },
+    {
+      image: '/static/images/skills/angular.png',
+      title: 'Angular',
+    },
+    {
+      image: '/static/images/skills/nodejs.png',
+      title: 'Node JS',
+    },
+    {
+      image: '/static/images/skills/django.png',
+      title: 'Django',
+    },
+    {
+      image: '/static/images/skills/javascript.png',
+      title: 'Javascript',
+    },
+    {
+      image: '/static/images/skills/typescript.png',
+      title: 'Typescript',
+    },
+    {
+      image: '/static/images/skills/csharp.png',
+      title: 'C#',
+    },
+    {
+      image: '/static/images/skills/python.png',
+      title: 'Python',
+    },
+    {
+      image: '/static/images/skills/aws.png',
+      title: 'AWS',
+    },
+    {
+      image: '/static/images/skills/docker.png',
+      title: 'Docker',
+    },
+  ]
 }
 
 module.exports = siteMetadata

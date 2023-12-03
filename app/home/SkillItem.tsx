@@ -1,5 +1,6 @@
-import Image from '@/components/Image'
 import React from 'react'
+import Image from '@/components/Image'
+import { Skill } from 'types'
 
 type Props = {
   skill: Skill

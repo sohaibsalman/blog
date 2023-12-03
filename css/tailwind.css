@@ -33,7 +33,3 @@ input:-webkit-autofill:focus {
 .katex-display {
   overflow: auto hidden;
 }
-
-body {
-  background-color: #131313 !important;
-}
