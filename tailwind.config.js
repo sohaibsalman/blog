@@ -15,6 +15,11 @@ const primaryColor = {
     '800': '#c9f31d',
     '900': '#c9f31d',
     '950': '#c9f31d',
+  },
+  'default': {
+    'primary': '#c9f31d',
+    'gray-dark': '#131313',
+    'grid-line': 'rgba(255,255,255,.05)',
   }
 }
 const colors = {...tailwindColors, ...primaryColor};
@@ -44,6 +49,7 @@ module.exports = {
       colors: {
         primary: colors.primary,
         gray: colors.gray,
+        default: colors.default
       },
       typography: ({ theme }) => ({
         DEFAULT: {

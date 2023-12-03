@@ -1,58 +1,10 @@
 import Image from '@/components/Image'
 import React from 'react'
 import SkillItem from './SkillItem'
+import siteMetadata from '@/data/siteMetadata'
 
 export default function Skills() {
-  const skills: Skill[] = [
-    {
-      image: '/static/images/skills/dotnet.png',
-      title: 'ASP.NET',
-    },
-    {
-      image: '/static/images/skills/react.png',
-      title: 'React',
-    },
-    {
-      image: '/static/images/skills/nextjs.png',
-      title: 'Next JS',
-    },
-    {
-      image: '/static/images/skills/angular.png',
-      title: 'Angular',
-    },
-    {
-      image: '/static/images/skills/nodejs.png',
-      title: 'Node JS',
-    },
-    {
-      image: '/static/images/skills/django.png',
-      title: 'Django',
-    },
-    {
-      image: '/static/images/skills/javascript.png',
-      title: 'Javascript',
-    },
-    {
-      image: '/static/images/skills/typescript.png',
-      title: 'Typescript',
-    },
-    {
-      image: '/static/images/skills/csharp.png',
-      title: 'C#',
-    },
-    {
-      image: '/static/images/skills/python.png',
-      title: 'Python',
-    },
-    {
-      image: '/static/images/skills/aws.png',
-      title: 'AWS',
-    },
-    {
-      image: '/static/images/skills/docker.png',
-      title: 'Docker',
-    },
-  ]
+  const skills = siteMetadata.skills
 
   return (
     <div className="py-32">
@@ -63,11 +15,11 @@ export default function Skills() {
         articles, do certifications and get my hands dirty by working on simple ideas of my own.
         Here are some technologies that I love!
       </p>
-      <div className="center mt-20 flex items-center justify-between">
+      <div className="center mt-20 flex items-center justify-center">
         <div>
-          <Image src="/static/images/3d-kid.png" alt="3d-kid" height={250} width={250} />
+          <Image src="/static/images/3d-kid.png" alt="3d-kid" height={200} width={200} />
         </div>
-        <div>
+        <div className="mr-14">
           <Image src="/static/images/line-vector.png" alt="vector-line" height={70} width={70} />
         </div>
         <div className="flex max-w-6xl flex-wrap gap-4">
