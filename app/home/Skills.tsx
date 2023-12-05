@@ -7,7 +7,7 @@ export default function Skills() {
   const skills = siteMetadata.skills
 
   return (
-    <div className="py-32">
+    <div className="px-4 py-12 md:px-16 md:py-28">
       <h1 className="text-5xl font-bold text-primary-100">Things I code with</h1>
       <p className="mt-5 text-xl">
         I love to develop things that run over the internet. I am in a quest of keeping myself up to
@@ -17,7 +17,7 @@ export default function Skills() {
       </p>
       <div className="center mt-20 flex items-center justify-center">
         <div>
-          <Image src="/static/images/3d-kid.png" alt="3d-kid" height={200} width={200} />
+          <Image src="/static/images/3d-kid.png" alt="3d-kid" height={250} width={250} />
         </div>
         <div className="mr-14">
           <Image src="/static/images/line-vector.png" alt="vector-line" height={70} width={70} />
