@@ -20,6 +20,7 @@ const primaryColor = {
     'primary': '#c9f31d',
     'gray-dark': '#131313',
     'grid-line': 'rgba(255,255,255,.05)',
+    'divider': 'rgba(255,255,255,.15)',
   }
 }
 const colors = {...tailwindColors, ...primaryColor};
