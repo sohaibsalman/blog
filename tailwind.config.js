@@ -38,6 +38,9 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      rotate: {
+        '30': '30deg' 
+      },
       lineHeight: {
         11: '2.75rem',
         12: '3rem',

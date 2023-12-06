@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function GridLines() {
-  const gridLines = [10, 20, 30, 40, 50, 60, 70, 80, 90];
+  const gridLines = [10, 20, 30, 40, 50, 60, 70, 80, 90]
 
   const renderedGridLines = gridLines.map((line) => (
     <span
@@ -11,9 +11,5 @@ export default function GridLines() {
     />
   ))
 
-  return (
-    <div className='absolute top-0 left-0 w-full h-full -z-10'>
-      {renderedGridLines}
-    </div>
-  )
+  return <div className="absolute left-0 top-0 -z-10 h-full w-full"> {renderedGridLines} </div>
 }
