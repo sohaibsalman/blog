@@ -17,6 +17,8 @@ const siteMetadata = {
   facebook: '',
   youtube: '',
   linkedin: 'https://www.linkedin.com/in/sohaibsalman/',
+  upwork: 'https://www.upwork.com/freelancers/~0133ff75924b84c802',
+  skype: 'https://join.skype.com/invite/rjpffvUldsGk',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the
@@ -135,7 +137,7 @@ const siteMetadata = {
       image: '/static/images/skills/docker.png',
       title: 'Docker',
     },
-  ]
+  ],
 }
 
 module.exports = siteMetadata

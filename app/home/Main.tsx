@@ -1,5 +1,7 @@
 import React from 'react'
 import Image from '@/components/Image'
+import siteMetadata from '@/data/siteMetadata'
+import SocialIcon from '@/components/social-icons'
 
 export default function Main() {
   return (
@@ -26,8 +28,21 @@ export default function Main() {
           Salman
         </span>
       </div>
-      <div className="absolute left-[8vw] top-1/2 z-20 -translate-y-1/2 rounded-full bg-black/75 px-8 py-5 text-4xl font-bold lg:text-5xl">
-        Software Engineer
+      <div className="absolute left-[14%] top-[55%] z-20 -translate-y-1/2">
+        <div className="rounded-full bg-black/75 px-10 py-6 text-4xl font-bold lg:text-4xl">
+          Software Engineer
+        </div>
+        <div className="-ml-10 mt-5 rounded-full bg-black/75 px-10 py-6 text-4xl font-bold lg:text-4xl">
+          Full-Stack Developer
+        </div>
+      </div>
+      <div className="absolute right-0 top-[55%]">
+        <div className="flex flex-col gap-8">
+          <SocialIcon kind="github" href={siteMetadata.github} size={10} />
+          <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size={10} />
+          <SocialIcon kind="skype" href={siteMetadata.skype} size={10} />
+          <SocialIcon kind="upwork" href={siteMetadata.upwork} size={10} />
+        </div>
       </div>
     </div>
   )
