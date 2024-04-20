@@ -9,6 +9,7 @@ import Button from '@/components/Button'
 
 export default function Services() {
   const router = useRouter()
+
   return (
     <Container className="bg-black">
       <>
@@ -31,7 +32,7 @@ export default function Services() {
           </div>
         ))}
         <div className="mt-14 flex justify-center">
-          <Button text="Explore my Projects" onClick={() => router.push('/projects')} />
+          <Button onClick={() => router.push('/projects')}>Explore my projects</Button>
         </div>
       </>
     </Container>
