@@ -22,6 +22,8 @@ const siteMetadata = {
   instagram: '',
   medium: '',
   bluesky: '',
+  upwork: 'https://www.upwork.com/freelancers/~0133ff75924b84c802',
+  skype: 'https://join.skype.com/invite/rjpffvUldsGk',
   locale: 'en-US',
   // set to true if you want a navbar fixed to the top
   stickyNav: false,
@@ -147,7 +149,7 @@ const siteMetadata = {
       image: '/static/images/skills/docker.png',
       title: 'Docker',
     },
-  ]
+  ],
 }
 
 module.exports = siteMetadata
