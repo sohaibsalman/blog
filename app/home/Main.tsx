@@ -8,10 +8,10 @@ export default function Main() {
         className="absolute bottom-20 left-1/2 z-10 -translate-x-1/2"
         src="/static/images/avatar.png"
         alt="sohaibsalman"
-        width={800}
-        height={800}
+        width={750}
+        height={750}
       />
-      <div className="absolute z-0 w-full text-center">
+      <div className="absolute top-16 z-0 w-full text-center">
         <span
           className="inline-block text-7xl font-extrabold uppercase md:mx-8 md:text-8xl lg:text-9xl"
           style={{
@@ -26,7 +26,7 @@ export default function Main() {
           Salman
         </span>
       </div>
-      <div className="absolute left-[5vw] top-1/2 z-20 -translate-y-1/2 rounded-full bg-black/75 px-8 py-5 text-4xl font-bold lg:text-5xl">
+      <div className="absolute left-[8vw] top-1/2 z-20 -translate-y-1/2 rounded-full bg-black/75 px-8 py-5 text-4xl font-bold lg:text-5xl">
         Software Engineer
       </div>
     </div>
