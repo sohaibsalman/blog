@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from '@/components/Image'
 import { Skill } from 'types'
+import AppIcon from '@/components/icons'
 
 type Props = {
   skill: Skill
@@ -9,11 +10,11 @@ type Props = {
 export default function SkillItem({ skill }: Props) {
   return (
     <div
-      className="h-40 w-40 rounded-3xl border border-[#353535] bg-[#1f1f1f]
-      px-6 py-6 transition-all duration-75 hover:border-primary-100 hover:text-primary-100"
+      className="flex h-40 w-40 flex-col items-center justify-center rounded-3xl border border-[#353535] bg-default-gray-light
+      px-6 py-6 transition-all duration-75 hover:border-default-primary hover:text-default-primary"
     >
-      <div className="flex h-20 items-center justify-center">
-        <Image src={skill.image} alt={skill.title} width={70} height={70} />
+      <div className="h-16 w-16">
+        <AppIcon kind={skill.icon} size={12} color={skill.color} />
       </div>
       <h4 className="mt-3 text-center text-xl transition-all duration-75">{skill.title}</h4>
     </div>

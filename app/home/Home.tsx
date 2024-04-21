@@ -4,7 +4,7 @@ import Main from './Main'
 import Blogs from './Blogs'
 import About from './About'
 import Skills from './Skills'
-import Services from './Services'
+import Experience from './Experience'
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <Main />
       <About />
       <Skills />
-      <Services />
+      <Experience />
       <Blogs />
       {siteMetadata.newsletter?.provider && (
         <div className="flex items-center justify-center pt-4">
