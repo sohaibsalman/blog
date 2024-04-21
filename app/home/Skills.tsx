@@ -1,14 +1,18 @@
-import Image from '@/components/Image'
 import React from 'react'
 import SkillItem from './SkillItem'
 import siteMetadata from '@/data/siteMetadata'
+import Container from '@/components/Container'
 
 export default function Skills() {
   const skills = siteMetadata.skills
 
   return (
-    <div className="px-4 py-12 md:px-16 md:py-28">
-      <h1 className="text-5xl font-bold text-primary-100">Things I code with</h1>
+    <Container>
+      <h1 className="font-semibold">My Skills</h1>
+      <h2 className="my-2 text-4xl font-semibold">
+        Let's <span className="text-default-primary">Explore</span> The Things I{' '}
+        <span className="text-default-primary">Code</span> With
+      </h2>
       <p className="mt-5 text-xl">
         I love to develop things that run over the internet. I am in a quest of keeping myself up to
         date according to the new technologies and platforms, and for that I love to read tech
@@ -16,18 +20,12 @@ export default function Skills() {
         Here are some technologies that I love!
       </p>
       <div className="center mt-20 flex items-center justify-center">
-        <div>
-          <Image src="/static/images/3d-kid.png" alt="3d-kid" height={250} width={250} />
-        </div>
-        <div className="mr-14">
-          <Image src="/static/images/line-vector.png" alt="vector-line" height={70} width={70} />
-        </div>
-        <div className="flex max-w-6xl flex-wrap gap-4">
+        <div className="flex max-w-7xl flex-wrap gap-4">
           {skills.map((skill) => (
             <SkillItem skill={skill} key={skill.title} />
           ))}
         </div>
       </div>
-    </div>
+    </Container>
   )
 }

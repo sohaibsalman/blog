@@ -102,52 +102,66 @@ const siteMetadata = {
   },
   skills: [
     {
-      image: '/static/images/skills/dotnet.png',
+      icon: 'dotnet',
       title: 'ASP.NET',
+      color: '#512BD4',
     },
     {
-      image: '/static/images/skills/react.png',
+      icon: 'react',
       title: 'React',
+      color: '#61DAFB',
     },
     {
-      image: '/static/images/skills/nextjs.png',
+      icon: 'nextJs',
       title: 'Next JS',
     },
     {
-      image: '/static/images/skills/angular.png',
+      icon: 'angular',
       title: 'Angular',
     },
     {
-      image: '/static/images/skills/nodejs.png',
+      icon: 'nodeJs',
       title: 'Node JS',
+      color: '#339933',
     },
     {
-      image: '/static/images/skills/django.png',
-      title: 'Django',
-    },
-    {
-      image: '/static/images/skills/javascript.png',
+      icon: 'javascript',
       title: 'Javascript',
+      color: '#F7DF1E',
     },
     {
-      image: '/static/images/skills/typescript.png',
+      icon: 'typescript',
       title: 'Typescript',
+      color: '#3178C6',
     },
     {
-      image: '/static/images/skills/csharp.png',
+      icon: 'csharp',
       title: 'C#',
+      color: '#512BD4',
     },
     {
-      image: '/static/images/skills/python.png',
+      icon: 'python',
       title: 'Python',
+      color: '#3776AB',
     },
     {
-      image: '/static/images/skills/aws.png',
+      icon: 'aws',
       title: 'AWS',
     },
     {
-      image: '/static/images/skills/docker.png',
+      icon: 'docker',
       title: 'Docker',
+      color: '#2496ED',
+    },
+    {
+      icon: 'webflow',
+      title: 'Webflow',
+      color: '#146EF5',
+    },
+    {
+      icon: 'bubble',
+      title: 'Bubble.io',
+      color: '#146EF5',
     },
   ],
 }

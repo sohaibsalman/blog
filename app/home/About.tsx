@@ -1,32 +1,55 @@
+import Container from '@/components/Container'
+import Image from 'next/image'
 import React from 'react'
 
 export default function About() {
-  const highlightClassName = 'font-bold text-primary-100'
+  const highlightClassName = 'font-bold text-default-primary'
+
+  const services = [
+    'Full-Stack Development',
+    'Chrome Extensions Development',
+    'Frontend Development',
+    'Backend Development',
+    'API Integrations',
+  ]
 
   return (
-    <div className="-mt-20 bg-black px-4 py-12 md:px-16 md:py-28">
-      <h1 className="text-5xl font-semibold text-primary-100">About Me</h1>
-      <div className="text-xl">
-        <p className="my-4">
-          Experienced Full-Stack Engineer with <span className={highlightClassName}>3+ years</span>{' '}
-          of expertise in delivering cloud-based web technology solutions. My specialization spans
-          both front-end and back-end development, and I have a track record of creating bespoke
-          software solutions from scratch that seamlessly scale to accommodate your evolving
-          requirements.
-        </p>
-        <p>
-          With a deep understanding and hands-on experience in a variety of programming languages
-          and architectural patterns, and a string grip on algorithms, I possess the proficiency
-          needed to engineer scalable and cost-effective solutions for every unique project concept.
-        </p>
+    <Container className="-mt-20 bg-black">
+      <div className="flex items-center gap-16">
+        <div className="max-w-4xl">
+          <h1 className="font-semibold">About Me</h1>
+          <h2 className="my-2 text-4xl font-semibold">
+            Problem <span className={highlightClassName}>Solver</span> For Your Digital
+            <span className={highlightClassName}> Products</span>
+          </h2>
+          <div className="text-xl">
+            <p className="my-4">
+              Experienced Full-Stack Engineer with{' '}
+              <span className={highlightClassName}>3+ years</span> of expertise in delivering
+              cloud-based web technology solutions. My specialization spans both front-end and
+              back-end development, and I have a track record of creating bespoke software solutions
+              from scratch or customizing existing applications, that seamlessly scale to
+              accommodate your evolving requirements.
+            </p>
+            <p>
+              With a deep understanding and hands-on experience in a variety of programming
+              languages and architectural patterns, and a strong grip on algorithms, I possess the
+              proficiency needed to engineer scalable and cost-effective solutions for every unique
+              project concept.
+            </p>
+          </div>
+        </div>
+        <div className="text-xl">
+          {services.map((service, index) => (
+            <div key={index} className="my-5 flex items-center gap-3">
+              <span className="flex h-8 w-8 items-center">
+                <Image src="/static/images/dot.png" alt="dot" width={18} height={18} />
+              </span>
+              {service}
+            </div>
+          ))}
+        </div>
       </div>
-      <div className="mt-12 flex justify-center text-center text-3xl">
-        <p className="md:w-[80%]">
-          I love to <span className={highlightClassName}>provide</span> and implement elegant{' '}
-          <span className={highlightClassName}>software solutions</span> for complex{' '}
-          <span className={highlightClassName}>business problems</span>
-        </p>
-      </div>
-    </div>
+    </Container>
   )
 }

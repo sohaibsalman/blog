@@ -3,25 +3,26 @@ const { fontFamily } = require('tailwindcss/defaultTheme')
 const tailwindColors = require('tailwindcss/colors')
 
 const primaryColor = {
-  'primary': {
-    '50': '#c9f31d',
-    '100': '#c9f31d',
-    '200': '#c9f31d',
-    '300': '#c9f31d',
-    '400': '#c9f31d',
-    '500': '#c9f31d',
-    '600': '#c9f31d',
-    '700': '#c9f31d',
-    '800': '#c9f31d',
-    '900': '#c9f31d',
-    '950': '#c9f31d',
+  primary: {
+    50: '#c9f31d',
+    100: '#c9f31d',
+    200: '#c9f31d',
+    300: '#c9f31d',
+    400: '#c9f31d',
+    500: '#c9f31d',
+    600: '#c9f31d',
+    700: '#c9f31d',
+    800: '#c9f31d',
+    900: '#c9f31d',
+    950: '#c9f31d',
   },
-  'default': {
-    'primary': '#c9f31d',
+  default: {
+    primary: '#c9f31d',
     'gray-dark': '#131313',
+    'gray-light': '#1f1f1f',
     'grid-line': 'rgba(255,255,255,.05)',
-    'divider': 'rgba(255,255,255,.15)',
-  }
+    divider: 'rgba(255,255,255,.15)',
+  },
 }
 const colors = {...tailwindColors, ...primaryColor};
 
