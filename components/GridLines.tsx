@@ -7,7 +7,7 @@ export default function GridLines() {
     <span
       key={line}
       style={{ left: `${line}%` }}
-      className="absolute h-full w-px bg-default-grid-line"
+      className="absolute h-full w-px bg-grid-line"
     />
   ))
 

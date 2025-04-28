@@ -3,7 +3,7 @@ import React from 'react'
 import { FaArrowDown, FaArrowUp, FaRegCalendarAlt } from 'react-icons/fa'
 
 export default function Experience() {
-  const highlightClassName = 'font-bold text-default-primary'
+  const highlightClassName = 'font-bold text-primary-50'
 
   return (
     <Container className="bg-black">
@@ -15,7 +15,7 @@ export default function Experience() {
         </h2>
       </div>
       <div className="mt-16 grid grid-cols-2 text-xl">
-        <div className="grid grid-cols-2 gap-10 bg-default-gray-light md:p-16">
+        <div className="grid grid-cols-2 gap-10 bg-gray-light md:p-16">
           <div className="border-r border-r-default-divider px-4">
             <div className="mb-14">
               <ExperienceDetail title="Software Engineer" date="2023 - Present" sub="Formulatrix" />
@@ -35,18 +35,18 @@ export default function Experience() {
           </div>
         </div>
         <div className="flex flex-col items-center justify-end">
-          <h3 className="rounded-full bg-default-gray-light px-20 py-6 text-8xl uppercase">
+          <h3 className="rounded-full bg-gray-light px-20 py-6 text-8xl uppercase">
             Study
           </h3>
-          <FaArrowDown className="my-7 text-5xl text-default-primary" />
+          <FaArrowDown className="my-7 text-5xl text-primary-50" />
         </div>
       </div>
       <div className="grid grid-cols-2 text-xl">
         <div className="flex flex-col items-center justify-start">
-          <FaArrowUp className="my-7 text-5xl text-default-primary" />
-          <h3 className="rounded-full bg-default-gray-light px-20 py-6 text-8xl uppercase">Work</h3>
+          <FaArrowUp className="my-7 text-5xl text-primary-50" />
+          <h3 className="rounded-full bg-gray-light px-20 py-6 text-8xl uppercase">Work</h3>
         </div>
-        <div className="grid grid-cols-2 gap-10 bg-default-gray-light md:p-16">
+        <div className="grid grid-cols-2 gap-10 bg-gray-light md:p-16">
           <div className="border-r border-r-default-divider px-4">
             <div className="mb-14">
               <ExperienceDetail
@@ -82,7 +82,7 @@ function ExperienceDetail({ date, title, sub }: { date: string; title: string; s
   return (
     <>
       <p className="flex items-center gap-3 text-lg">
-        <FaRegCalendarAlt className="text-default-primary" /> {date}
+        <FaRegCalendarAlt className="text-primary-50" /> {date}
       </p>
       <p className="my-1 font-semibold">{title}</p>
       <p className="font-light">{sub}</p>

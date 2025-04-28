@@ -10,8 +10,8 @@ export default function Skills() {
     <Container>
       <h1 className="font-semibold">My Skills</h1>
       <h2 className="my-2 text-4xl font-semibold">
-        Let's <span className="text-default-primary">Explore</span> The Things I{' '}
-        <span className="text-default-primary">Code</span> With
+        Let's <span className="text-primary-50">Explore</span> The Things I{' '}
+        <span className="text-primary-50">Code</span> With
       </h2>
       <p className="mt-5 text-xl">
         I love to develop things that run over the internet. I am in a quest of keeping myself up to

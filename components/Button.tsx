@@ -17,7 +17,7 @@ export default function Button({ children, size, inverted, ...rest }: Props) {
   return (
     <button
       {...rest}
-      className={`bg-default-primary ${classNames} font-extrabold uppercase text-default-gray-dark
+      className={`bg-primary-50 ${classNames} font-extrabold uppercase text-gray-dark cursor-pointer
       transition-all duration-300 hover:text-white ${rest.className}`}
     >
       {children}

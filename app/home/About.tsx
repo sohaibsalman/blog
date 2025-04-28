@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 
 export default function About() {
-  const highlightClassName = 'font-bold text-default-primary'
+  const highlightClassName = 'font-bold text-primary-50'
 
   const services = [
     'Full-Stack Development',

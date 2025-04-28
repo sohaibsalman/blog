@@ -8,7 +8,7 @@ export default function Main() {
     <div className="relative h-screen">
       <Image
         className="absolute bottom-20 left-1/2 z-10 -translate-x-1/2"
-        src="/static/images/avatar.png"
+        src="/static/images/user.png"
         alt="sohaibsalman"
         width={750}
         height={750}
