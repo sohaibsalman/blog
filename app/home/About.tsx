@@ -15,7 +15,7 @@ export default function About() {
 
   return (
     <Container className="-mt-20 bg-black">
-      <div className="flex items-center gap-16">
+      <div className="flex flex-wrap items-center gap-16">
         <div className="max-w-4xl">
           <h1 className="font-semibold">About Me</h1>
           <h2 className="my-2 text-4xl font-semibold">
@@ -25,7 +25,7 @@ export default function About() {
           <div className="text-xl">
             <p className="my-4">
               Experienced Full-Stack Engineer with{' '}
-              <span className={highlightClassName}>3+ years</span> of expertise in delivering
+              <span className={highlightClassName}>4+ years</span> of expertise in delivering
               cloud-based web technology solutions. My specialization spans both front-end and
               back-end development, and I have a track record of creating bespoke software solutions
               from scratch or customizing existing applications, that seamlessly scale to

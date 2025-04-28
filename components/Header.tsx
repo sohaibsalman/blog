@@ -1,20 +1,14 @@
 'use client'
-import { useRouter } from 'next/navigation'
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
-import Link from './Link'
 import MobileNav from './MobileNav'
 import Button from './Button'
-import SearchButton from './SearchButton'
-import ThemeSwitch from './ThemeSwitch'
+import Link from 'next/link'
 
 const Header = () => {
-  const router = useRouter()
-
-  let headerClass = 'fixed z-50 flex w-full items-center justify-between border-b border-grid-line bg-gray-dark px-8 py-5 top-0'
-
   return (
-    <header className={headerClass}>
+    <header className="border-grid-line bg-gray-dark fixed top-0 z-50 flex w-full justify-between border-b px-8 py-5">
+      <MobileNav />
       <Link href="/" aria-label={siteMetadata.headerTitle}>
         <div className="flex items-center justify-between">
           <div className="mr-3"></div>
@@ -27,8 +21,8 @@ const Header = () => {
           )}
         </div>
       </Link>
-      <div className="flex items-center space-x-4 leading-5 sm:-mr-6 sm:space-x-6">
-        <div className="no-scrollbar max-w-40 md:max-w-72 lg:max-w-96 hidden items-center gap-x-4 overflow-x-auto sm:flex">
+      <div className="flex space-x-4 leading-5 sm:-mr-6 sm:space-x-6 md:items-center">
+        <div className="no-scrollbar hidden max-w-40 items-center gap-x-4 overflow-x-auto sm:flex md:max-w-72 lg:max-w-96">
           {headerNavLinks
             .filter((link) => link.href !== '/')
             .map((link) => (
@@ -41,13 +35,14 @@ const Header = () => {
               </Link>
             ))}
         </div>
-        <SearchButton />
-        <ThemeSwitch />
-        <MobileNav />
+        {/* <SearchButton /> */}
+        {/* <ThemeSwitch /> */}
       </div>
-      <Button size="sm" inverted onClick={() => router.push('/contact')}>
-        Let's Talk
-      </Button>
+      <Link href="/contact">
+        <Button size="sm" inverted>
+          Let's Talk
+        </Button>
+      </Link>
     </header>
   )
 }

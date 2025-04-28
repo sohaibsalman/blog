@@ -13,9 +13,9 @@ export default function Main() {
         width={750}
         height={750}
       />
-      <div className="absolute top-16 z-0 w-full text-center">
+      <div className="absolute top-10 z-0 w-full text-center md:top-16">
         <span
-          className="inline-block text-7xl font-extrabold uppercase md:mx-8 md:text-8xl lg:text-9xl"
+          className="inline-block text-6xl font-extrabold uppercase md:mx-8 md:text-8xl lg:text-9xl"
           style={{
             color: 'transparent',
             WebkitTextStrokeColor: 'white',
@@ -24,19 +24,19 @@ export default function Main() {
         >
           Sohaib
         </span>
-        <span className="inline-block text-7xl font-extrabold uppercase text-primary-50 md:text-8xl lg:text-9xl">
+        <span className="text-primary-50 inline-block text-6xl font-extrabold uppercase md:text-8xl lg:text-9xl">
           Salman
         </span>
       </div>
-      <div className="absolute left-[14%] top-[55%] z-20 -translate-y-1/2">
-        <div className="rounded-full bg-black/75 px-10 py-6 text-4xl font-bold lg:text-4xl">
+      <div className="absolute top-[55%] left-[14%] z-20 -translate-y-1/2 max-sm:top-[36%] max-sm:text-center">
+        <div className="rounded-full bg-black/75 px-10 py-6 text-4xl font-bold max-sm:px-5 max-sm:py-3 max-sm:text-lg lg:text-4xl">
           Software Engineer
         </div>
-        <div className="-ml-10 mt-5 rounded-full bg-black/75 px-10 py-6 text-4xl font-bold lg:text-4xl">
+        <div className="mt-5 rounded-full bg-black/75 px-10 py-6 text-4xl font-bold max-sm:mt-2 max-sm:px-5 max-sm:py-3 max-sm:text-lg lg:text-4xl">
           Full-Stack Developer
         </div>
       </div>
-      <div className="absolute right-0 top-[55%]">
+      <div className="absolute top-[55%] right-0 hidden lg:block">
         <div className="flex flex-col gap-8">
           <SocialIcon kind="github" href={siteMetadata.github} size={10} />
           <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size={10} />

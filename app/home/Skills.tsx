@@ -20,7 +20,7 @@ export default function Skills() {
         Here are some technologies that I love!
       </p>
       <div className="center mt-20 flex items-center justify-center">
-        <div className="flex max-w-7xl flex-wrap gap-4">
+        <div className="flex max-w-7xl flex-wrap justify-center gap-4">
           {skills.map((skill) => (
             <SkillItem skill={skill} key={skill.title} />
           ))}

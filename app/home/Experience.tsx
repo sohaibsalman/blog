@@ -14,18 +14,16 @@ export default function Experience() {
           <span className={highlightClassName}> Education</span> Experience
         </h2>
       </div>
-      <div className="mt-16 grid grid-cols-2 text-xl">
-        <div className="grid grid-cols-2 gap-10 bg-gray-light md:p-16">
-          <div className="border-r border-r-default-divider px-4">
-            <div className="mb-14">
+      <div className="mt-16 text-xl lg:grid lg:grid-cols-2">
+        <div className="bg-gray-light p-3 max-sm:py-6 md:p-16">
+          <div className="space-y-10 px-4">
+            <div>
               <ExperienceDetail title="Software Engineer" date="2023 - Present" sub="Formulatrix" />
             </div>
             <div>
               <ExperienceDetail title="Software Engineer" date="2021 - 2023" sub="Rolustech" />
             </div>
-          </div>
-          <div className="px-4">
-            <div className="mb-14">
+            <div>
               <ExperienceDetail
                 title="Jr. Software Engineer"
                 date="2020 - 2021"
@@ -34,21 +32,19 @@ export default function Experience() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-end">
-          <h3 className="rounded-full bg-gray-light px-20 py-6 text-8xl uppercase">
-            Study
-          </h3>
-          <FaArrowDown className="my-7 text-5xl text-primary-50" />
+        <div className="flex flex-col items-center justify-end max-sm:hidden">
+          <h3 className="bg-gray-light rounded-full px-20 py-6 text-8xl uppercase">Study</h3>
+          <FaArrowDown className="text-primary-50 my-7 text-5xl" />
         </div>
       </div>
-      <div className="grid grid-cols-2 text-xl">
-        <div className="flex flex-col items-center justify-start">
-          <FaArrowUp className="my-7 text-5xl text-primary-50" />
-          <h3 className="rounded-full bg-gray-light px-20 py-6 text-8xl uppercase">Work</h3>
+      <div className="text-xl max-sm:mt-5 lg:grid lg:grid-cols-2">
+        <div className="flex flex-col items-center justify-start max-sm:hidden">
+          <FaArrowUp className="text-primary-50 my-7 text-5xl" />
+          <h3 className="bg-gray-light rounded-full px-20 py-6 text-8xl uppercase">Work</h3>
         </div>
-        <div className="grid grid-cols-2 gap-10 bg-gray-light md:p-16">
-          <div className="border-r border-r-default-divider px-4">
-            <div className="mb-14">
+        <div className="bg-gray-light p-3 max-sm:py-6 md:p-16">
+          <div className="space-y-10 px-4">
+            <div>
               <ExperienceDetail
                 title="Bachelor of Science in IT"
                 date="2017 - 2021"
@@ -62,9 +58,7 @@ export default function Experience() {
                 sub="Superior College of IT"
               />
             </div>
-          </div>
-          <div className="px-4">
-            <div className="mb-20">
+            <div>
               <ExperienceDetail
                 title="Matriculation in CS"
                 date="2015"

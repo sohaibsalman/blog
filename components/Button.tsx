@@ -8,7 +8,7 @@ type Props = React.HtmlHTMLAttributes<HTMLButtonElement> & {
 export default function Button({ children, size, inverted, ...rest }: Props) {
   let classNames = ''
 
-  if (size === 'sm') classNames += 'px-6 py-3 text-lg '
+  if (size === 'sm') classNames += 'px-6 py-3 text-lg max-sm:text-sm max-sm:px-4 max-sm-py-2 '
   else if (size === 'lg' || !size) classNames += 'px-8 py-6 text-2xl '
 
   if (inverted) classNames += 'hover:bg-black '
@@ -17,8 +17,7 @@ export default function Button({ children, size, inverted, ...rest }: Props) {
   return (
     <button
       {...rest}
-      className={`bg-primary-50 ${classNames} font-extrabold uppercase text-gray-dark cursor-pointer
-      transition-all duration-300 hover:text-white ${rest.className}`}
+      className={`bg-primary-50 ${classNames} text-gray-dark cursor-pointer font-extrabold uppercase transition-all duration-300 hover:text-white ${rest.className}`}
     >
       {children}
     </button>
