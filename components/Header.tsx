@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header className="border-grid-line bg-gray-dark fixed top-0 z-50 flex w-full justify-between border-b px-8 py-5">
       <MobileNav />
-      <Link href="/" aria-label={siteMetadata.headerTitle}>
+      <Link href="/" aria-label={siteMetadata.headerTitle} className="flex">
         <div className="flex items-center justify-between">
           <div className="mr-3"></div>
           {typeof siteMetadata.headerTitle === 'string' ? (
